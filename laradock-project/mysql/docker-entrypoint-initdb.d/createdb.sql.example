@@ -25,4 +25,8 @@
 #CREATE DATABASE IF NOT EXISTS `dev_db_3` COLLATE 'utf8_general_ci' ;
 #GRANT ALL ON `dev_db_3`.* TO 'default'@'%' ;
 
+CREATE DATABASE IF NOT EXISTS `template` COLLATE 'utf8_general_ci' ;
+CREATE USER 'user'@'%' IDENTIFIED BY 'mysql';
+GRANT ALL ON `template`.* TO 'user'@'%' ;
+
 FLUSH PRIVILEGES ;
